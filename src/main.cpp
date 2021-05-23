@@ -8,6 +8,7 @@
 #include <ctime>
 #include <csignal>
 
+#include <gpio.hpp>
 #include <franzboard.h>
 #include <wcollection.hpp>
 #include <examplebutton.hpp>
@@ -26,6 +27,7 @@ int main(int argc, char *argv[]){
     signal(SIGINT, cleanLeds);
 
     srand(time(NULL));
+    GPIO::init();
 
     //ExampleButton *b1 = new ExampleButton();
     Wcollection *mainw = new Wcollection();
