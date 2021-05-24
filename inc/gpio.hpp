@@ -12,7 +12,7 @@ typedef enum {IN,OUT} gpio_dir_t;
 class GPIO : public QObject{
   Q_OBJECT
 public:
-  GPIO(gpio_num_t pin_i, gpio_dir_t direction_i);
+  GPIO(gpio_num_t pin_i, gpio_dir_t direction_i = OUT, QObject *parent = nullptr);
   ~GPIO();
   static void init();
   static void delayChrono(std::chrono::milliseconds msec);

@@ -22,7 +22,7 @@ void cleanLeds(int signum){
 
 int main(int argc, char *argv[]){
     QApplication a(argc, argv);
-    wiringPiSetupGpio();
+    a.setWindowIcon(QIcon::fromTheme("start-here"));
 
     signal(SIGINT, cleanLeds);
 

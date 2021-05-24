@@ -10,4 +10,6 @@
     const unsigned short FB_BUTT_1 = 27;
     const unsigned short FB_BUTT_2 = 17;
     const unsigned short FB_BUTT_NUMBER = 3;
+
+    #define TEMPERATURE_FILE "/sys/class/thermal/thermal_zone0/temp"
 #endif

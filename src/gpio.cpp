@@ -1,5 +1,5 @@
 #include <gpio.hpp>
-GPIO::GPIO(gpio_num_t pin_i, gpio_dir_t direction_i) : QObject(){
+GPIO::GPIO(gpio_num_t pin_i, gpio_dir_t direction_i, QObject *parent) : QObject(parent){
   pin = pin_i;
   direction = direction_i;
 

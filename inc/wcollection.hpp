@@ -8,6 +8,7 @@
 #include <examplebutton.hpp>
 #include <checkboxes.hpp>
 #include <lcd.hpp>
+#include <serverui.hpp>
 
 class Wcollection : public QToolBox
 {
